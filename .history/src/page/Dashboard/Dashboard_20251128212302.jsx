@@ -5,7 +5,7 @@ export default function HomePage() {
   const [showDashboard, setShowDashboard] = useState(false);
 
   return (
-<div className="  ">
+<div className="  rounded-[40px] text-white flex items-center justify-center p-4">
       {!showDashboard ? (
         <Welcome onStart={() => setShowDashboard(true)} />
       ) : (
@@ -19,7 +19,7 @@ function Welcome({ onStart }) {
   return (
    
      <div className="space-y-[10px]">
-     <div className="w-full h-[100px] bg-white rounded-[10px]">test</div>
+     <div className="w-full h-[100px] bg-white rounded-[10px]"></div>
      <div className="w-full h-[100px] bg-white rounded-[10px]"></div>
      <div className="w-full h-[100px] bg-white rounded-[10px]"></div>
 

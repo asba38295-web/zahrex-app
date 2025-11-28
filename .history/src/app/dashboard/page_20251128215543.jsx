@@ -72,6 +72,16 @@ export default function DashboardShell() {
           <div className="hidden md:block" />
         </div>
 
+        {/* 🧩 المحتوى: خاوي دابا — ركب فيه كومبونوناتك من بعد */}
+        {/* <EmptyPanel /> */}
+
+        {/*
+          🔌 منين تبغي تركّب كومبونونت:
+          import OrdersTable from "@/componentsDashboard/orders/OrdersTable";
+          ثم بدّل <EmptyPanel /> بـ:
+          {activeTab === "orders" && <OrdersTable />}
+          وهاكذا لباقي التابات...
+        */}
       </main>
    </aside>
 
@@ -90,34 +100,20 @@ export default function DashboardShell() {
        className="text-[#8A8A8A] w-[100px] h-[39px] rounded-full mt-[10px] text-[10px]" />
      </div>
      <div className="flex w-full justify-end ">
-       <div className="flex gap-[10px]">
       <div className=" -space-x-[10px]">
         {/* ADD */}
       <button className="w-[59px] h-[59px]  border border-[#E6E6E6] rounded-full justify-center items-center ">
-      <Image className="ml-[23px]" width={10} height={10} src={"icons/+.svg"} />
+      <Image className="ml-[20px]" width={24} height={24} src={"icons/search.svg"} />
 
       </button>
-      {/* user1 */}
-      <button>
-      <Image width={59} height={59} src={"/user/user1.png"} className="  rounded-full " />
-      </button>
-            {/* user2 */}
-
-      <button>
-      <Image width={59} height={59} src={"/user/user2.png"} className="  rounded-full " />
-
-      </button>
+      <button className="bg-black w-[59px] h-[59px] rounded-full "></button>
+      <button className="bg-white w-[59px] h-[59px] rounded-full "></button>
+      <button className="bg-white w-[59px] h-[59px] rounded-full "></button>
       </div>
-      {/* nif */}
-      <button className="bg-white w-[59px] h-[59px]  rounded-full flex justify-center items-center ">
-      <Image width={24} height={24} src={"icons/nif.svg"} />
-
-      </button>
-
     </div>
 
     </div>
-    </div>
+
 
 
     </div>
@@ -142,3 +138,14 @@ function titleForTab(key) {
     case "email": return "Email";
   }
 }
+
+// function EmptyPanel() {
+//   return (
+//     <div className="grid place-items-center h-[60vh] rounded-2xl border bg-white text-gray-500">
+//       <div className="text-center space-y-2">
+//         <div className="text-sm uppercase tracking-wide text-gray-400">Empty</div>
+//         <p className="text-base">ركّب الكومبونونت ديالك هنا من بعد.</p>
+//       </div>
+//     </div>
+//   );
+// }

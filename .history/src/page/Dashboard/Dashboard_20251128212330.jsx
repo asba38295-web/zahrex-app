@@ -5,7 +5,7 @@ export default function HomePage() {
   const [showDashboard, setShowDashboard] = useState(false);
 
   return (
-<div className="  ">
+<div className="  rounded-[40px] text-white flex items-center justify-center p-4">
       {!showDashboard ? (
         <Welcome onStart={() => setShowDashboard(true)} />
       ) : (

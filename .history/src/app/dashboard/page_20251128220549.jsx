@@ -104,15 +104,11 @@ export default function DashboardShell() {
             {/* user2 */}
 
       <button>
-      <Image width={59} height={59} src={"/user/user2.png"} className="  rounded-full " />
+      <Image width={59} height={59} src={"/user/user1.png"} className="  rounded-full " />
 
       </button>
       </div>
-      {/* nif */}
-      <button className="bg-white w-[59px] h-[59px]  rounded-full flex justify-center items-center ">
-      <Image width={24} height={24} src={"icons/nif.svg"} />
-
-      </button>
+      <button className="bg-white w-[59px] h-[59px] rounded-full "></button>
 
     </div>
 
